@@ -1,4 +1,3 @@
-```markdown
 # phone-validator
 
 Official JavaScript SDK for [GenderAPI.io](https://www.genderapi.io) — validate and format international phone numbers in your apps.
@@ -24,7 +23,7 @@ npm install phone-validator
 Don’t want to install packages? Just include the SDK from a CDN in your HTML page:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/phone-validator@1.0.0/dist/phone-validator.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/phone-validator@1.0.1/dist/phone-validator.umd.js"></script>
 <script>
   const api = new PhoneValidator('YOUR_API_KEY');
   api.validate({ number: '+12025550123' })
@@ -171,4 +170,4 @@ api.validate({ number: '2128675309', address: 'US' });
 ## 📄 License
 
 MIT License
-```
+

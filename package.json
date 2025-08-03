@@ -1,6 +1,6 @@
 {
   "name": "phone-validator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Official JS SDK for GenderAPI.io",
   "main": "dist/phone-validator.umd.js",
   "module": "dist/phone-validator.esm.js",
@@ -20,5 +20,8 @@
   "license": "MIT",
   "devDependencies": {
     "rollup": "^4.44.1"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
