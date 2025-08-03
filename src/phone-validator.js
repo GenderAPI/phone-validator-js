@@ -14,6 +14,36 @@ class phoneValidator {
             address
         });
     }
+    async _postRequest(endpoint, payload) {
+        const url = `${this.baseUrl}${endpoint}`;
+        const headers = {
+            "Authorization": `Bearer ${this.apiKey}`,
+            "Content-Type": "application/json"
+        };
+
+        const body = JSON.stringify(
+            Object.fromEntries(
+                Object.entries(payload).filter(([_, v]) => v !== null)
+            )
+        );
+
+        const response = await fetch(url, {
+            method: "POST",
+            headers,
+            body
+        });
+
+        if (response.status === 500 || response.status === 502 || response.status === 503 || response.status === 504 || response.status === 408) {
+            throw new Error(`Server Error: ${response.statusText}`);
+        }
+
+        try {
+            return await response.json()
+        }catch (e) {
+            throw new Error(`API Error ${response.status}: ${JSON.stringify(e)}`);
+        }
+
+    }
 
 
 }
