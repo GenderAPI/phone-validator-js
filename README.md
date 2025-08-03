@@ -23,7 +23,7 @@ npm install phone-validator
 Don’t want to install packages? Just include the SDK from a CDN in your HTML page:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/phone-validator@1.0.6/dist/phone-validator.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/phone-validator@1.0.7/dist/phone-validator.umd.js"></script>
 <script>
   const api = new PhoneValidator('YOUR_API_KEY');
   api.validate({ number: '+12025550123' })

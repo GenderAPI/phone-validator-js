@@ -1,6 +1,6 @@
 {
-  "name": "phone-validator",
-  "version": "1.0.6",
+  "name": "@genderapi/phone-validator",
+  "version": "1.0.7",
   "description": "Official JS SDK for GenderAPI.io",
   "main": "dist/phone-validator.umd.js",
   "module": "dist/phone-validator.esm.js",
